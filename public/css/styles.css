@@ -1,0 +1,14 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+div.converter, div.conversion-rates{
+  background-color: lightgrey;
+  border: 2px solid grey;
+  padding: 10px;
+  display: block;
+}
+
+div#app {
+  display: flex;
+}
