@@ -10,14 +10,18 @@
   <body>
     <h1>Currency Converter</h1>
     <div id="app">
+
       <div class="conversion-rates">
       <h2>Conversion Rates:</h2>
         <ul>
           <li v-for="(rate, currency) in rates">{{currency}}: {{rate}}</li>
         </ul>
       </div>
+
       <div class="converter">
+
       <h2>Converter:</h2>
+      
       <form>
       <label>Convert <input v-model="currencyAmountFromEur" type="number"> EUR to:</label>
         <select v-model="selectedCurrencyFromEur">
@@ -26,7 +30,9 @@
       <input v-on:click.prevent="convertFromEur()" type="submit" value="convert!">
       <label id="converted-from"></label>
       </form>
+
       <br>
+
       <form>
         <label>Convert</label>
         <input v-model="currencyAmountToEur" type="number">
@@ -37,6 +43,7 @@
         <input v-on:click.prevent="convertToEur()" type="submit" value="convert!">
         <label id="converted-to"></label>
       </form>
+
       </div>
 
 
